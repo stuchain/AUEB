@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!-----/*etsi ksekinane ola ta arxeia html*/--->
+<html lang="en">
+<!-----/*vazoume glwssa agglika*/----->
+<head>
+    <meta charset = "UtF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Untitled Luxury | Luxury Store </title>     <!----/*titlos site*/---->
+    <link rel="stylesheet" href="style.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600;700&display=swap" rel="stylesheet">    
+</head>
+<body>
+
+    <div class="header"> <!-- To pano plaisio me to logo to menu kai to searchbar-->
+        <div class="container">
+            
+            <div class="navbar">
+            
+                <div class="logo">
+                    <a href="index.html"><img src="footerlogo.png" width="180px"></a>   
+                </div>
+                
+                <nav>
+                    
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="categories.html">Categories</a> </li>
+                        <li><a href="aboutus.html">About us</a> </li>
+                        <li><a href="contact.html">Contact</a> </li>
+                        <li><a href="registration.html">Registration</a> </li>
+                    </ul>
+                
+                </nav>
+                
+                <img src="m&u.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+    </div>
+
+    <!-----------single product---------->
+    <div class="small-container single-product">
+        
+        <div class="row">
+            
+            <div class="col-6">
+                <img src="imgs/villa6.jpg" width="80%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="imgs/cher1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imgs/cher2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imgs/cher3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imgs/cher4.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imgs/cher5.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <p>
+                    <a href="index.html">Home</a>
+                    / <a href="categories.html">Categories</a>
+                    / <a href="villas.html">Rent Villa</a>
+                    / <a href="villa1.html">VILLA CHER</a>
+                </p>
+                <h1>VILLA CHER <br>
+                    Kounoupas, Mykonos</h1>
+
+                <h4>5500&euro;/day</h4>
+                
+                <input type="number" value="1" ><br><br>
+                <a href="" class="btn"> Check for availability</a><br><br>
+                <h3>Product Details</h3>
+                <h5>#2001</h5>
+                <p>8 Bedroom villa in Kounoupas, Mykonos </p>
+                <!-------collapsible------->
+
+                <a class="btn">
+                    More Information
+                </a>
+                <div class="content">
+                    <p>
+                        Villa Cher located in Kounoupas Mykonos<br>
+                        one of the calmest and most private areas of the island. <br>
+                        The total acreage of the property is 5.6 acres,<br>
+                        and it includes a main house, three separate guest houses<br>
+                        and its own private chapel.<br>
+                          Offers 8-bedrooms with private baths,<br>
+                           and it can accommodate up to 18 guests. <br>
+                           The property is built using materials of the highest quality <br>
+                          the wooden elements are handcrafted and custom-made and the stones<br>
+                           are handpicked and carefully shaped by hand.<br>
+                            The Villa also offers a fully <br>
+                          operating smart-house system that allows<br>
+                           the guests to manage the property from a tablet.
+                    </p> 
+                    <h3>Details</h3>
+                    <h4>Guests: 1-18, Bedrooms: 8, Baths: 8, Swimming pool</h4>
+                </div>
+                <script>
+                    var coll = document.getElementsByClassName("btn");
+                    var i;
+
+                    for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                    content.style.display = "none";
+                    } else {
+                    content.style.display = "block";
+                    }
+                    });
+                    }
+                </script>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!------------testimonial------------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> The best villa.<br>We shot all the promos for skims!</p>
+                    <img src="imgs/kim.jpg">
+                    <h3>Kim Kardashian</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> Wonderful place!
+                    <br> All the money I got from euroleague was worth it.</p>
+                    <img src="imgs/jordi.jpg">
+                    <h3>Jordi Bertomeou</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> I Love Mykonos.<BR>
+                        This place is the diamond of Mykonos!</p>
+                    <img src="imgs/charl.jpg">
+                    <h3>Charlotte D'Alessio</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------related products------->
+    <br><br><br><br><br><br><br>
+    <div class="small-container">
+        <div class="row-2">
+
+            <h5>Listing views: 3k</h5>
+        </div><div class="row-2">
+
+            <h5>Last updated: 10/11/2023</h5>
+        </div>
+        <div class="row-2">
+
+            <h2>Related Products</h2>
+
+        </div>
+    </div>
+    <div class="small-container-2">
+        <div class="row-products">
+
+            <div class="col-4">
+                <img src="imgs/villa6.jpg">
+                <h4>VILLA KEYRA</h4>
+                <h5>#2010</h5>
+                <p>1440&euro;/day<br></p>
+            </div>
+            <div class="col-4">
+                <img src="imgs/villa1.jpg">
+                <h4>VILLA ALLEGRA</h4>
+                <h5>#2011</h5>
+                <p>2020&euro;/day</p>
+            </div>
+            <div class="col-4">
+                <img src="imgs/villa2.jpg">
+                <h4>VILLA ZENDAYA</h4>
+                <h5>#2101</h5>
+                <p>7000&euro;/day</p>
+            </div>
+            <div class="col-4">
+                <img src="imgs/villa3.jpg">
+                <h4>VILLA AHRI</h4>
+                <h5>#2111</h5>
+                <p>6600&euro;/day</p>
+            </div>
+        </div>
+    </div>
+    <!------------footer---------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Contact Us Via Email</h3>
+                    <ul>
+                        <li><a href="mailto: p3200013@aueb.gr">Stelios Vasiliou</li></a>
+                        <li><a href="mailto: p3200142@aueb.gr">Stefanos Papanikolaou</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <img src="footerlogo.png"/>
+                    <p> UL Copyright © 2023 Untitled Luxury - All rights reserved || Designed By: 2SVP </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/stelios.vasileiou/">Stelios' Instagram</a></li>
+                        <li><a href="https://www.instagram.com/papanikolaoustef/">Stefanos' Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------js for product gallery------>
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        SmallImg[0].onclick= function()
+        {
+        ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick= function()
+        {
+        ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick= function()
+        {
+        ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick= function()
+        {
+        ProductImg.src = SmallImg[3].src;
+        }
+        SmallImg[4].onclick= function()
+        {
+        ProductImg.src = SmallImg[4].src;
+        }
+    </script>
+<!----------Js for toggle menu-------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+</body>

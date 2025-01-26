@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset = "UtF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Untitled Luxury | Luxury Store </title>     
+    <link rel="stylesheet" href="style.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600;700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <div class="header"> <!-- To pano plaisio me to logo to menu kai to searchbar-->
+        <div class="container">
+            
+            <div class="navbar">
+            
+                <div class="logo">
+                    <a href="index.html"><img src="footerlogo.png" width="180px"></a>   
+                </div>
+                
+                <nav>
+                    
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="categories.html">Categories</a> </li>
+                        <li><a href="aboutus.html">About us</a> </li>
+                        <li><a href="contact.html">Contact</a> </li>
+                        <li><a href="registration.html">Registration</a> </li>
+                    </ul>
+                
+                </nav>
+                
+                <img src="m&u.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+    </div>
+
+    <!----*product grid*---->
+    
+    <div class="small-container">
+        
+        <h2 class="title">SUIT LISTINGS</h2>
+        
+        <div class="row-products">
+            
+            <div class="col-4">
+                <a href="suit1.html"><img src="suits/boss1.png"></a>
+                <h3>CHANEL B43 </h4>
+                <h4> Extra-slim-fit suit in micro-patterned virgin wool</h4>
+                <h5>#1001</h5>
+                <p>1290&euro;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10/11/2023<br></p>
+            </div>
+           
+            <div class="col-4">
+                <img src="suits/boss2.png">
+                <h3>DIOR ANGEL</h4>
+                <h4>Slim-fit in patterned stretched wool</h4>
+                <h5>#1010</h5>
+                <p>2480&euro;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06/10/2023</p>
+            </div>
+            
+            <div class="col-4">
+                <img src="suits/boss3.png">
+                <h3>CHROME HEARTS </h4>
+                <h4>Slim-fit suit in wool, tussah, silk and linen</h4>
+                <h5>#1100</h5>
+                <p>1459&euro;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22/09/2023</p>
+            </div>
+            
+            <div class="col-4">
+                <img src="suits/boss4.png">
+                <h3>PALACE CONCEPT</h4>
+                <h4>Extra-slim-fit three piece in virgin wool</h4>
+                <h5>#1101</h5>
+                <p>835&euro;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08/07/2023</p>
+            </div>
+            
+            <div class="col-4">
+                <img src="suits/boss5.png">
+                <h3>YSL SUIT</h4>
+                <h4>Regular-fit suit in streched checkered wool</h4>
+                <h5>#1111</h5>
+                <p>932&euro;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21/06/2023</p>
+            </div>
+        
+        </div>
+    
+    </div>
+
+    <!------------footer---------->
+   
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Contact Us Via Email</h3>
+                    <ul>
+                        <li><a href="mailto: p3200013@aueb.gr">Stelios Vasiliou</li></a>
+                        <li><a href="mailto: p3200142@aueb.gr">Stefanos Papanikolaou</li></a>
+                    </ul>
+                </div>
+
+                <div class="footer-col-2">
+                    <img src="footerlogo.png"/>
+                    <p> UL Copyright © 2023 Untitled Luxury - All rights reserved || Designed By: 2SVP </p>
+                </div>
+                
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/stelios.vasileiou/">Stelios' Instagram</a></li>
+                        <li><a href="https://www.instagram.com/papanikolaoustef/">Stefanos' Instagram</a></li>
+                    </ul>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <!----------JS for toggle menu-------->
+
+    <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+    </script>
+
+</body>
+
+</html>

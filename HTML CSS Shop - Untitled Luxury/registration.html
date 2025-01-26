@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset = "UtF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Untitled Luxury | Luxury Store </title>     
+    <link rel="stylesheet" href="style.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600;700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <div class="header"> 
+        <div class="container">
+            
+            <div class="navbar">
+            
+                <div class="logo">
+                    <a href="index.html"><img src="footerlogo.png" width="180px"></a>   
+                </div>
+                
+                <nav>
+                    
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="categories.html">Categories</a> </li>
+                        <li><a href="aboutus.html">About us</a> </li>
+                        <li><a href="contact.html">Contact</a> </li>
+                        <li><a href="registration.html">Registration</a> </li>
+                    </ul>
+                
+                </nav>
+                
+                <img src="m&u.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+        </div>
+        <!---------------Register------------->
+    <div class="contact-section">
+        <h1>Create Account</h1>
+        <p><br>Become a part of our family!</p>
+    </div>
+    <br>
+    <br>
+
+    <div class="contact-fill"><h2 style="text-align:center">Fill In Your Details</h2>
+    </div>
+
+    <div class="contact-box">
+        <div class="contact-left">
+
+
+            <h3>Users Details<br>____________________________________________________________________________________</h3>
+            <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Vasilious Papanikolaou" />
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="vaspapa@gmail.com" />
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Date Of Birth</label>
+                        <input type="date" placeholder="29/12/2021" />
+                    </div>
+                    <div class="input-group">
+                        <label>Residential Address</label>
+                        <input type="text" placeholder="Giakoumi 34, Athens" />
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Phone Numbers</label>
+                        <input type="text" placeholder="+30 6982880363" />
+                        <input type="text" placeholder="+30 210 6211 234" />
+                    </div>
+                </div>
+
+
+                <h3>Payment And Product Shipping Details<br>____________________________________________________________________________________</h3>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>District</label>
+                        <input type="text" placeholder="ATHENS" />
+                    </div>
+                    <div class="input-group">
+                        <label>Postal Code</label>
+                        <input type="text" placeholder="115 23" />
+                    </div>
+                </div>
+                <div class="input-row">
+                        <div class="input-group">
+                            <label>Payment Method</label>
+                            <select>
+                                <option>Select</option>
+                                <option>Cash on delivery</option>
+                                <option>Credit card</option>
+                                <option>Paypal </option>
+                            </select>
+                        </div>
+                </div>
+
+
+                <h3>User Identification Information<br>____________________________________________________________________________________</h3>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Username</label>
+                        <input type="text" placeholder="stepap" />
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="text" placeholder="enter your password" />
+                        <input type="text" placeholder="re-enter password" />
+                    </div>
+                </div>
+
+
+                <h3>Communication Options For Sending Updates, Advertisements, etc<br>____________________________________________________________________________________</h3>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Select</label>
+                        <select>
+                            <option>SMS</option>
+                            <option>Email</option>
+                            <option>Viber</option>
+                            <option>WhatsApp</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <h3>Short Questionnaire<br>____________________________________________________________________________________</h3>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Frequency Of Web Purchases</label>
+                            <select>
+                                <option>Select</option>
+                                <option>1-2 a month</option>
+                                <option>2-3 times per month</option>
+                                <option>5+ a month</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Most Frequent Payment Method</label>
+                            <select>
+                                <option>Select</option>
+                                <option>Cash on delivery</option>
+                                <option>Credit card</option>
+                                <option>Paypal </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Most Frequently Purchased Product Categories</label>
+                            <select>
+                                <option>Select</option>
+                                <option>Clothing</option>
+                                <option>Watch</option>
+                                <option>Car</option>
+                                <option>other</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Store Preference</label>
+                            <select>
+                                <option>Select</option>
+                                <option>E-SHOP</option>
+                                <option>PHYSICAL STORE</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Frequency Of Following Fashion Trends</label>
+                            <select>
+                                <option>Select</option>
+                                <option>Every day</option>
+                                <option>Cookies pop up</option>
+                                <option>Never</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <button type="submit">REGISTER</button>
+                </form>
+</div>
+    </div>
+              <br>
+              <br><br>
+              <br>
+    <!------------footer---------->
+   
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Contact Us Via Email</h3>
+                    <ul>
+                        <li><a href="mailto: p3200013@aueb.gr">Stelios Vasiliou</li></a>
+                        <li><a href="mailto: p3200142@aueb.gr">Stefanos Papanikolaou</li></a>
+                    </ul>
+                </div>
+
+                <div class="footer-col-2">
+                    <img src="footerlogo.png"/>
+                    <p> UL Copyright © 2023 Untitled Luxury - All rights reserved || Designed By: 2SVP </p>
+                </div>
+                
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/stelios.vasileiou/">Stelios' Instagram</a></li>
+                        <li><a href="https://www.instagram.com/papanikolaoustef/">Stefanos' Instagram</a></li>
+                    </ul>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <!----------JS for toggle menu-------->
+
+    <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+    </script>
+
+</body>
+
+</html>

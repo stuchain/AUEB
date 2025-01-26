@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!-----/*etsi ksekinane ola ta arxeia html*/--->
+<html lang="en">
+<!-----/*vazoume glwssa agglika*/----->
+<head>
+    <meta charset = "UtF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Untitled Luxury | Luxury Store </title>     <!----/*titlos site*/---->
+    <link rel="stylesheet" href="style.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600;700&display=swap" rel="stylesheet">     
+</head>
+<body>
+
+    <div class="header"> 
+        <div class="container">
+            
+            <div class="navbar">
+            
+                <div class="logo">
+                    <a href="index.html"><img src="footerlogo.png" width="180px"></a>   
+                </div>
+                
+                <nav>
+                    
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="categories.html">Categories</a> </li>
+                        <li><a href="aboutus.html">About us</a> </li>
+                        <li><a href="contact.html">Contact</a> </li>
+                        <li><a href="registration.html">Registration</a> </li>
+                    </ul>
+                
+                </nav>
+                
+                <img src="m&u.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+    </div>
+
+    <!-----------single product---------->
+    <div class="small-container single-product">
+        
+        <div class="row">
+            
+            <div class="col-4">
+                <img src="suits/analytic1.png" width="30%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="suits/analytic2.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="suits/analytic3.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="suits/analytic4.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="suits/analytic5.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="suits/analytic6.png" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <p>
+                    <a href="index.html">Home</a>
+                    / <a href="categories.html">Categories</a>
+                    / <a href="suits.html">Suits</a>
+                    / <a href="suit1.html">CHANEL B43</a>
+                </p>
+                <h1>CHANEL B43</h1>
+
+                <h4>1290&euro;</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn"> Add to Cart</a>
+                <h3>Product Details</h3>
+                <h5>#1001</h5>
+                <p>EXTRA-SLIM-FIT SUIT IN MICRO-PATTERNED VIRGIN WOOL </p>
+                <!-------collapsible------->
+
+                <a class="btn">
+                    More Information
+                </a>
+                <div class="content">
+                    <p>
+                        A modern suit by CHANEL Menswear. Woven with a plain check, this two-piece suit  <br>
+                        is tailored to a regular fit in stretch cloth blended with wool. Signature lining <br>
+                        completes this ensemble. <br>
+                        Regular fit<br>
+                        Notch lapels<br>
+                        Number of buttons: 2 <br>
+                        Welt chest pockets<br>
+                        Pockets top: Flap pockets<br>
+                        Inside welt pockets<br>
+                        Button cuffs<br>
+                        Side vent<br>
+                        Fully lined<br>
+                        Standard length<br>
+                        Fit back length: 74 cm<br>
+                        Pockets bottom front: French pocket<br>
+                        Pockets bottom back: Welt pocket<br>
+                        Fit foot width: 37,0 cm<br>
+                        Packaging: Dust bag<br>
+                    </p> 
+                    <h3>Composition</h3>
+                    <h4>Cotton 100%, Polyester 100%</h4>
+                </div>
+                <script>
+                    var coll = document.getElementsByClassName("btn");
+                    var i;
+
+                    for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                    content.style.display = "none";
+                    } else {
+                    content.style.display = "block";
+                    }
+                    });
+                    }
+                </script>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-------testimonial------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> Perfect fit. <br>Just like me in Milwaukee.</p>
+                    <img src="imgs/user4.png">
+                    <h3>Damian Lillard </h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> Very comfortable, especisially
+                    <br> if you travel First Class.</p>
+                    <img src="imgs/user3.png">
+                    <h3>Jack Harlow</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> Nice Suit, perfect for<BR>
+                        a night at Piraeus</p>
+                    <img src="imgs/user5.png">
+                    <h3>Kendrick Nunn</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------related products------->
+    <br><br><br><br><br><br><br>
+    <div class="small-container">
+        <div class="row-2">
+
+            <h5>Listing views: 1k</h5>
+        </div><div class="row-2">
+            <h5>Last updated: 10/11/2023</h5>
+        </div>
+        <div class="row-2">
+
+            <h2>Related Products</h2>
+
+        </div>
+    </div>
+    <div class="small-container-2">
+        <div class="row-products">
+
+            <div class="col-4">
+                <img src="suits/boss2.png">
+                <h4>EXTRA-SLIM-FIT SUIT IN <br>
+                    MICRO-PATTERNED VIRGIN WOOL</h4>
+                <h5>#1001</h5>
+                <p>1290&euro;<br></p>
+            </div>
+            <div class="col-4">
+                <img src="suits/boss3.png">
+                <h4>SLIM-FIT SUIT IN WOOL, TUSSAH<br> 
+                    SILK AND LINEN</h4>
+                <h5>#1100</h5>
+                <p>1459&euro;</p>
+            </div>
+            <div class="col-4">
+                <img src="suits/boss4.png">
+                <h4>EXTRA-SLIM-FIT THREE-PIECE SUIT IN VIRGIN WOOL</h4>
+                <h5>#1101</h5>
+                <p>835&euro;</p>
+            </div>
+            <div class="col-4">
+                <img src="suits/boss5.png">
+                <h4>REGULAR-FIT SUIT IN CHECKED STRETCH CLOTH</h4>
+                <h5>#1111</h5>
+                <p>932&euro;</p>
+            </div>
+        </div>
+    </div>
+    <!------------footer---------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Contact Us Via Email</h3>
+                    <ul>
+                        <li><a href="mailto: p3200013@aueb.gr">Stelios Vasiliou</li></a>
+                        <li><a href="mailto: p3200142@aueb.gr">Stefanos Papanikolaou</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <img src="footerlogo.png"/>
+                    <p> UL Copyright © 2023 Untitled Luxury - All rights reserved || Designed By: 2SVP </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/stelios.vasileiou/">Stelios' Instagram</a></li>
+                        <li><a href="https://www.instagram.com/papanikolaoustef/">Stefanos' Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------js for product gallery------>
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        SmallImg[0].onclick= function()
+        {
+        ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick= function()
+        {
+        ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick= function()
+        {
+        ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick= function()
+        {
+        ProductImg.src = SmallImg[3].src;
+        }
+        SmallImg[4].onclick= function()
+        {
+        ProductImg.src = SmallImg[4].src;
+        }
+    </script>
+<!----------Js for toggle menu-------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+</body>
