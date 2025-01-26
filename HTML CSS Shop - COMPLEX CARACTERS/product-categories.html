@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UtF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complex Caracters | Designer Clothing</title>     <!----/*titlos site*/---->
+        <link rel="stylesheet" href="style.css">     <!----/*edw kanoume delcare to css arxeio*/---->
+        <link rel="preconnect" href="https://fonts.googleapis.com">      <!----/*eidiki grammatoseira*/--->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;600;700&display=swap" rel="stylesheet">      
+    </head>
+    <body>
+        <!----/*apo edw ksekinaei i selida*/-->
+
+        <div class="header">
+            <!--- /*ftiaxnoume classes wste na boroume na tous dwsoume sygkekrimenes idiotites gia ola ta antikeimena*/--->
+            <div class="container">
+                <div class="navbar">
+                    <!---/*navbar h alliws, menu*/--->
+                    <div class="logo">
+                        <!---/*to logo panw arristera*/--->
+                        <a href="index.html"><img src="images/logo.png" width="180px"></a>      <!----/*me to href exw valei na einai clickable link*/--->
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a> </li>
+                            <li><a href="product-categories.html">Categories</a> </li>
+                            <li><a href="about-us.html">About us</a> </li>
+                            <li><a href="contact.html">Contact</a> </li>
+                            <li><a href="registration.html">Registration</a> </li>
+
+                        </ul>
+                    </nav>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+                </div>
+           
+        </div>
+    </div>
+<!------------categories-------->            
+<div class="categories">
+    <div class="small-container">
+        <h2 class="title">Categories</h2>
+        <div class="row">
+            <div class="col-3">
+                <img src="images/cat-1.jpg" alt="">  
+                <div class="categoriesbar">
+                    <a href="wom-jack.html">Jackets</a>
+                    <a href="">Dresses</a>
+                    <a href="">Shirts</a>
+                    <a href="">Shorts</a>
+                    <a href="">Jeans</a>
+                </div>
+                
+              </div>
+              <div class="col-3">
+                <img src="images/cat-2.jpg" alt="">  
+                <div class="categoriesbar">
+                    <a href="men-tshirt.html">T-shirts</a>
+                    <a href="">Hoodies</a>
+                    <a href="">Sneakers</a> 
+                    <a href="">Jackets</a> 
+                    <a href="">Shorts</a> 
+        </div>
+              </div>
+              <div class="col-3">
+                <img src="images/cat-3.jpg" alt="">  
+                <div class="categoriesbar">
+                    <a href="">Sunglasses</a>
+                    <a href=""> &nbsp;Eyeglasses</a>
+                    <a href="">Goggles</a>
+        </div>
+              </div>
+              <div class="col-3">
+                <img src="images/cat-4.jpg" alt="">  
+                <div class="categoriesbar">
+                    <a href="">Jackets</a>
+                    <a href="">T-shirts</a>
+                    <a href="">Shirts</a> 
+                    <a href="">Jeans</a> 
+                    <a href="">Sneakers</a>  
+        </div>
+              </div>
+              <div class="col-3">
+                <img src="images/cat-5.jpg" alt="">  
+                <div class="categoriesbar">
+                    <a href="">Balenciaga</a>
+                    <a href="">Ambush</a>
+                    <a href="">Off-White</a> 
+                    <a href="">Karl</a> 
+                    <a href="">Supreme</a> 
+        </div>
+              </div>
+        </div>
+    </div>
+    
+</div>
+ <!------------footer---------->
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Contact Us Via Email</h3>
+                <ul>
+                    <li><a href="mailto: p3200013@aueb.gr">Stelios Vasiliou</li></a>
+                    <li><a href="mailto: p3200269@aueb.gr">Natalia Mylonaki</li></a>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo.png" />
+                <p>Free Shipping For Orders Over 800€</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/stelios.vasileiou/">Stelios Instagram</a></li>
+                    <li><a href="https://www.instagram.com/nataliamylonaki/">Natalias Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+    </body>
+</html>

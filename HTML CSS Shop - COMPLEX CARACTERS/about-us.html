@@ -1,0 +1,130 @@
+<!DOCTYPE html>     
+<html lang="en">     <!-----*vazoume glwssa agglika*----->
+<head>
+  <meta charset = "UtF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Caracters | Designer Clothing</title>     <!----*titlos site*---->
+  <link rel="stylesheet" href="style.css">     <!----*edw kanoume delcare to css arxeio*---->
+  <link rel="preconnect" href="https://fonts.googleapis.com">      <!----*eidiki grammatoseira*--->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;600;700&display=swap" rel="stylesheet">      
+</head>
+<body>
+    <!----*apo edw ksekinaei i selida*-->
+
+    <div class="header">
+        <!---*ftiaxnoume classes wste na boroume na tous dwsoume sygkekrimenes idiotites gia ola ta antikeimena*--->
+        <div class="container">
+            <div class="navbar">
+                <!---*navbar h alliws, menu*--->
+                <div class="logo">
+                    <!---*to logo panw arristera*--->
+                    <a href="index.html"><img src="images/logo.png" width="180px"></a>      
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="product-categories.html">Categories</a> </li>
+                        <li><a href="about-us.html">About us</a> </li>
+                        <li><a href="contact.html">Contact</a> </li>
+                        <li><a href="registration.html">Registration</a> </li>
+
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                    
+                </div>
+        <!-------about us------->
+        <div class="about-section">
+            <h1>About Us Page</h1>
+            
+          </div>
+          <br>
+          <br>
+          <h2 style="text-align:center">Our Team</h2>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/nat.png" alt="Natalia" style="width:100%">
+                <div class="container-new">
+                  <h2>Natalia Mylonaki
+                  </h2>
+                  <p class="title">CEO & Founder/Fashion Stylist </p>
+                  <p>Experienced and communicative fashion stylist with a proven<br>
+                    track record of co-organizing photo shoots and styling models.<br>
+                    7+ years of professional experience.<br>
+                    Eager to join Crolla to deliver an immersive styling experience.<br>
+                    In previous roles organized and assisted in 30+ photo shoots and <br>
+                    conducted 5 workshops for public figures and celebrities on proper attire.</p>
+                  <p>p3200269@aueb.gr</p>
+                  <p><a href="mailto: p3200269@aueb.gr" class="btn">Contact</a></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="images/stu.JPG" alt=Stelios" style="width:100%">
+                <div class="container-new">
+                  <h2>Stelios Vasileiou</h2>
+                  <p class="title">Art Director/Fashion Designer</p>
+                  <p>A talented and customer-oriented designer with an eye for<br>
+                    commercial fashion and detail in product styling.<br>
+                    7+ years of experience in a luxury brand environment.<br>
+                    Eager to join Givenchy to set a creative tone and inspire<br>
+                    new ideas and concepts. In previous roles created a highly<br>
+                    acclaimed men’s summer collection that boosted sales by 35%<br>
+                    relative to the previous year.</p>
+                  <p>p3200013@aueb.gr</p>
+                  <p><a href="mailto: p3200013@aueb.gr" class="btn">Contact</a></p>
+                </div>
+              </div>
+            </div>
+          
+        
+          </div>
+                
+        <!------------footer---------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Contact Us Via Email</h3>
+                        <ul>
+                            <li><a href="mailto: p3200013@aueb.gr">Stelios Vasiliou</li></a>
+                            <li><a href="mailto: p3200269@aueb.gr">Natalia Mylonaki</li></a>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo.png" />
+                        <p>Free Shipping For Orders Over 800€</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/stelios.vasileiou/">Stelios Instagram</a></li>
+                            <li><a href="https://www.instagram.com/nataliamylonaki/">Natalias Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------Js for toggle menu-------->
+<script>
+  var MenuItems = document.getElementById("MenuItems");
+
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px"){
+          MenuItems.style.maxHeight = "200px";
+      }
+      else {
+          MenuItems.style.maxHeight = "0px";
+      }
+  }
+
+</script>
+
+    </body>
+</html>

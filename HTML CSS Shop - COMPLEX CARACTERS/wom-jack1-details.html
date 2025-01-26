@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+     <!-----/*etsi ksekinane ola ta arxeia html*/--->
+<html lang="en">
+     <!-----/*vazoume glwssa agglika*/----->
+     <head>
+        <meta charset = "UtF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complex Caracters | Designer Clothing</title>     <!----/*titlos site*/---->
+        <link rel="stylesheet" href="style.css">     <!----/*edw kanoume delcare to css arxeio*/---->
+        <link rel="preconnect" href="https://fonts.googleapis.com">      <!----/*eidiki grammatoseira*/--->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;600;700&display=swap" rel="stylesheet">      
+    </head>
+    <body>
+        <!----/*apo edw ksekinaei i selida*/-->
+
+        <div class="header">
+            <!--- /*ftiaxnoume classes wste na boroume na tous dwsoume sygkekrimenes idiotites gia ola ta antikeimena*/--->
+            <div class="container">
+                <div class="navbar">
+                    <!---/*navbar h alliws, menu*/--->
+                    <div class="logo">
+                        <!---/*to logo panw arristera*/--->
+                        <a href="index.html"><img src="images/logo.png" width="180px"></a>      
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a> </li>
+                            <li><a href="product-categories.html">Categories</a> </li>
+                            <li><a href="about-us.html">About us</a> </li>
+                            <li><a href="contact.html">Contact</a> </li>
+                            <li><a href="registration.html">Registration</a> </li>
+
+                        </ul>
+                    </nav>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+                </div>
+    </div>
+
+    <!-----------single product---------->
+        <div class="small-container single-product">
+        <div class="row">
+        <div class="col-4">
+            <img src="images/wom-jack1.jpg" width="30%" id="ProductImg">
+
+            <div class="small-img-row">
+            <div class="small-img-col">
+            <img src="images/wom-jack1.jpg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+            <img src="images/wom-jack1.1.webp" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+            <img src="images/wom-jack1.2.jpeg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+            <img src="images/wom-jack1.3.jpeg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+            <img src="images/wom-jack1.4.jpeg" width="100%" class="small-img">
+            </div>
+            </div>
+        </div>
+            <div class="col-5">
+                <p><a href="index.html">Home</a>
+                     / <a href="product-categories.html">Categories</a>
+                      / <a href="wom-jack.html">Women's Jackets</a>
+                       / <a href="wom-jack1-details.html">Ambush Coat</a></p>
+                <h1>Ambush Shearling Coat</h1>
+                
+                <h4>3.060&euro;</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href="" class="btn"> Add to Cart</a>
+                    <h3>Product Details</h3>
+                    <h5>#4567</h5>
+                    <br>
+                    <p>Black leather coat featuring shearling</p>
+                    <p> details at the trims and cuffs.</p>
+                    <!-------collapsible------->
+
+    <a class="btn">More Information
+    </a>
+    <div class="content">
+        <br>
+      <p>AMBUSH's coat is made from buttery leather <br> 
+        with plush shearling for added warmth.<br>
+        This black iteration is accented by the<br> 
+        striking lapels and cuffs traced with<br>
+         ample wispy plumes.</p> <br>
+         <h3>Composition</h3> 
+            <h4><b>Outer:</b></h4>Leather 100%<br>
+            <h4><b>Lining: </b></h4>Polyester 100%, Viscose 50%, Cotton 50%<br> <br>
+            <h3>Washing instructions</h3>
+            Specialist Cleaning
+            <br>
+            <br>
+            <h3><a href="https://www.ambushdesign.com/en-gr/"> Official Website</a></h3>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("btn");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+                    
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-------testimonial------->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Insane quality, amazing style!!!</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="images/user1.jpeg">
+                <h3>Senna Paul</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>This jacket is amazing, the only <br> downside is that it is too heavy</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="images/user2.jpeg">
+                <h3>Leonard Pringles</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>I wear this jacket to all of<br>  my shows, people love it!</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="images/user3.jpeg">
+                <h3>James Hype, DJ
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!--------related products------->
+    <br><br><br><br><br><br><br>
+    <div class="small-container">
+        <div class="row-2">
+            
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;Related Products</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                    <a href="wom-jack.html"> View More</a></p>
+                    
+        </div>
+    </div>
+    <div class="small-container-2">
+        <div class="row-products">
+            
+            <div class="col-4">
+                <img src="images/wom-jack2.jpeg">
+                <h4>KARL LAGERFELD JACKET</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>549&euro;</p>
+            </div>
+            <div class="col-4">
+                <img src="images/wom-jack3.jpeg">
+                <h4>KARL LAGERFELD FAUX COAT</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>649&euro;</p>
+            </div>
+            <div class="col-4">
+                <img src="images/wom-jack4.jpeg">
+                <h4>KARL LONG DOWN COAT</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>599&euro;</p>
+            </div>
+            <div class="col-4">
+                <img src="images/wom-jack5.jpeg">
+                <h4>KARL LAGERFELD MONOGRAM SOFT COAT</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>690&euro;</p>
+            </div>
+        </div>
+    </div>
+        <!------------footer---------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Contact Us Via Email</h3>
+                        <ul>
+                            <li><a href="mailto: p3200013@aueb.gr">Stelios Vasiliou</li></a>
+                            <li><a href="mailto: p3200269@aueb.gr">Natalia Mylonaki</li></a>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo.png" />
+                        <p>Free Shipping For Orders Over 800€</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/stelios.vasileiou/">Stelios Instagram</a></li>
+                            <li><a href="https://www.instagram.com/nataliamylonaki/">Natalias Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-------js for product gallery------>
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        SmallImg[0].onclick= function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick= function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick= function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick= function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
+        SmallImg[4].onclick= function()
+        {
+            ProductImg.src = SmallImg[4].src;
+        }
+    </script>
+    <!----------Js for toggle menu-------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset = "UtF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complex Caracters | Designer Clothing</title>     <!----/*titlos site*/---->
+        <link rel="stylesheet" href="style.css">     <!----/*edw kanoume delcare to css arxeio*/---->
+        <link rel="preconnect" href="https://fonts.googleapis.com">      <!----/*eidiki grammatoseira*/--->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;600;700&display=swap" rel="stylesheet">      
+    </head>
+    <body>
+        <!----/*apo edw ksekinaei i selida*/-->
+
+        <div class="header">
+            <!--- /*ftiaxnoume classes wste na boroume na tous dwsoume sygkekrimenes idiotites gia ola ta antikeimena*/--->
+            <div class="container">
+                <div class="navbar">
+                    <!---/*navbar h alliws, menu*/--->
+                    <div class="logo">
+                        <!---/*to logo panw arristera*/--->
+                        <a href="index.html"><img src="images/logo.png" width="180px"></a>      
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a> </li>
+                            <li><a href="product-categories.html">Categories</a> </li>
+                            <li><a href="about-us.html">About us</a> </li>
+                            <li><a href="contact.html">Contact</a> </li>
+                            <li><a href="registration.html">Registration</a> </li>
+
+                        </ul>
+                    </nav>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+                </div>
+        </div>
+    </div>
+
+    <!---------------Register------------->
+    <div class="contact-section">
+        <h1>Create Account</h1>
+        <p>Become a part of our family!</p>
+    </div>
+    <br>
+    <br>
+    <h2 style="text-align:center">Fill In Your Details</h2>
+    <div class="contact-box">
+        <div class="contact-left">
+
+
+            <h3>Users Details</h3>
+            <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Marios papachristou" />
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="mariospapa@gmail.com" />
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Date Of Birth</label>
+                        <input type="date" placeholder="20/11/2022" />
+                    </div>
+                    <div class="input-group">
+                        <label>Residential Address</label>
+                        <input type="text" placeholder="efronioy 17,athens" />
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Phone Numbers</label>
+                        <input type="text" placeholder="+30 690 264 5755" />
+                        <input type="text" placeholder="+30 210 736 0582" />
+                    </div>
+                </div>
+
+
+                <h3>Payment And Product Shipping Details</h3>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>District</label>
+                        <input type="text" placeholder="Athens" />
+                    </div>
+                    <div class="input-group">
+                        <label>Postal Code</label>
+                        <input type="text" placeholder="105 56" />
+                    </div>
+                </div>
+                <div class="input-row">
+                        <div class="input-group">
+                            <label>Payment Method</label>
+                            <select>
+                                <option>Select</option>
+                                <option>pay on delivery</option>
+                                <option>credit card</option>
+                                <option>Paypal Id</option>
+                            </select>
+                        </div>
+                </div>
+
+
+                <h3>User Identification Information</h3>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Username</label>
+                        <input type="text" placeholder="mariospapa" />
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="text" placeholder="enter password" />
+                        <input type="text" placeholder="re enter password" />
+                    </div>
+                </div>
+
+
+                <h3>Communication Options For Sending Updates, Advertisements, etc</h3>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Select</label>
+                        <select>
+                            <option>SMS</option>
+                            <option>Email</option>
+                            <option>Viber</option>
+                            <option>WhatsApp</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <h3>Short Questionnaire</h3>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Frequency Of Web Purchases</label>
+                            <select>
+                                <option>Select</option>
+                                <option>at least once a week</option>
+                                <option>2-3 times per month</option>
+                                <option>even more rarely</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Most Frequent Payment Method</label>
+                            <select>
+                                <option>Select</option>
+                                <option>pay on delivery</option>
+                                <option>credit card</option>
+                                <option>Paypal Id</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Most Frequently Purchased Product Categories</label>
+                            <select>
+                                <option>Select</option>
+                                <option>t-shirt</option>
+                                <option>pants</option>
+                                <option>accessories</option>
+                                <option>other</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Store Preference</label>
+                            <select>
+                                <option>Select</option>
+                                <option>e-shop</option>
+                                <option>physical store</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Frequency Of Following Fashion Trends</label>
+                            <select>
+                                <option>Select</option>
+                                <option>every day</option>
+                                <option>whenever something pops up</option>
+                                <option>never</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <button type="submit">REGISTER</button>
+                </form>
+</div>
+    </div>
+    <!------------footer---------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Contact Us Via Email</h3>
+                    <ul>
+                        <li><a href="mailto: p3200013@aueb.gr">Stelios Vasiliou</li></a>
+                        <li><a href="mailto: p3200269@aueb.gr">Natalia Mylonaki</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png" />
+                    <p>Free Shipping For Orders Over 800€</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/stelios.vasileiou/">Stelios Instagram</a></li>
+                        <li><a href="https://www.instagram.com/nataliamylonaki/">Natalias Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Js for toggle menu-------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+</body>
+</html>

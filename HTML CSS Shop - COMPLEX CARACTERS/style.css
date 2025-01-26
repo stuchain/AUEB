@@ -1,0 +1,488 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Sono', sans-serif;}
+.navbar{
+    display: flex; /* using flexbox for nav*/
+    align-items: center; /* vazw ta items na einai centered horizontally*/
+    padding:20px; /*ftiaxnw to navigation bar kai me to padding vazw poso keno tha exei apo ta alla antikeimena gyrw gyrw*/
+}
+nav{
+    flex: 1;
+    text-align: right;     /*na min einai sto kentro to menu, na ksekinaei apo deksia*/
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none; /*xwris autin tin entoli, to menu eixe bullets*/
+}
+nav ul li{
+    display: inline-block; /*xwris autin tin entoli to menu itan katheto, twra einai horizontal*/
+    margin-right: 20px; /*dilwnw poso keno thelw na exw anamesa apo kathe item sto menu*/
+}
+a{
+    text-decoration: none; /* xwris auton tin entoli to menu itan underlined*/
+    color: #555;
+}
+p{
+    color: #555; /*dilwnw ti xrwma thelw gia oles tis paragraphs tou site*/
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;/*posi apostasi keno thelw apo aristera se ola ta items tou container*/
+    padding-right: 25px;/*to idio apo deksia*/
+}
+.row{
+    display: flex;
+    align-items: center; /* vazoume ta items tou row na einai centered*/
+    flex-wrap: wrap; 
+    justify-content: space-around;/*bainei pio mesa*/
+
+}
+.col-2{
+    min-width: 300px;/* minimum platos 300 pixel*/
+    padding: 15px; /* apostasi apo panw k katw 15 pixel*/
+}
+.col-2 img{
+    max-width: 100%; /*maximum width 100% */
+    padding: 50px 0; /* apostasi 50 pixel*/
+}
+.col-2 h1 {
+    font-size: 33px; /* font size tou h1 mesa sta col-2*/
+    line-height: 30px; /* otan pigainei apo katw to line height na einai 30 px*/
+    margin: 15px;
+    letter-spacing: normal;
+
+}
+.col-2 p{
+    margin: 15px;
+    text-align: center;} /* centering to text*/
+
+.col-2 a{
+    margin: 15px;
+    text-align: center;/* centering to text*/
+    justify-content: center;
+}    
+
+.btn{    /*ftiaxnw to button, na einai round, ta xrwmata tou klp klp*/
+    justify-content: center;
+    display: inline-block;
+    background: rgb(28, 27, 27);
+    color: #fff;
+    padding: 8px 30px;
+    margin: 10px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+    
+}
+.btn:hover{ /* xrwma tou button otan kanwis hover */
+    background: #919191;
+}
+
+.header .row{
+    margin-top: 70px;
+}
+.categories{
+    margin:70px 0;
+}
+.col-3 { /*stoixish kathgoriwn img*/
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+}
+.col-3:hover{
+    transform: translateY(-5px);
+}    
+.col-3 img{
+    width: 100%;
+}
+.small-container{ /*ftiacnw to small container*/
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.categoriesbar{ 
+    display: grid; /* grid layout*/
+    grid-template-columns: 1fr 1fr 1fr ;    /*sto categories section, katw apo kathe catigoria ftiaxnw na einai ises oi ypokatigories*/
+    text-align: center;
+    padding:5px;      /*poso keno tha exoun oi ypokatigories apo tin eikona panw*/
+
+}
+
+/*-----------footer----------*/
+.footer{
+    background: #000; /* ftiaxnw to background tou footer*/
+    color: #8a8a8a; 
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p {
+    color: #8a8a8a; 
+}
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2.footer-col-3{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-3 {
+    flex-basis: 15%;
+    text-align: center;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+ul{
+    list-style-type: none;    /*vgazei ta buletts*/
+}
+
+
+/*------products--------*/
+.row-products{
+    display:grid; /* grid layout*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*gia na xwrane ola ta products stin idia seira */
+    align-items:center;
+    padding: 30px;
+    justify-content: space-around;/*bainei pio mesa*/
+
+}
+.col-4{ /* ftiaxnw to column 4 gia stoixisi */
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    
+}
+.col-4 img{
+    width: 100%;
+}
+.title{  
+    text-align: center; /*kentrarw ton titlo toy proiontos */
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555; /* */
+}
+.title::after{
+    content: '';
+    background:#8a8a8a;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+col-4 p{
+    font-size: 14px;
+}
+.rating .fa{ /* rating color*/
+    color: #ff523b;
+}
+.col-4:hover{
+    transform: translateY(-5px); 
+}
+
+/*------single product details-------*/
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-4 img{
+    padding: 0;
+}
+.single-product .col-4 {
+    padding: 20px;
+}
+.single-product select{ /*to select twn sizes*/
+    display: block;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.col-5{
+    min-width: 300px;
+    padding: 15px;
+}
+.col-5 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-5 h1 {
+    font-size: 33px;
+    line-height: 50px;
+    margin: 0px;
+    text-align: left;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor:pointer;
+
+}
+.row-2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.small-container-2{
+    max-width: 500px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;}
+
+
+
+/*-------about us---------*/
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column { /* ftiaxnw special column gia ta dyo boxes tou about us*/
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+  }
+  
+  .container-new { /* neo container tou about us  */
+    padding: 0 16px;
+    text-align: center;
+  }
+  .container-new h2{
+    text-align: center;
+    padding: 10px;
+  }
+  .container-new::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button { /* ftiaxnw to button tou about us*/
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+
+
+/*---------contact-----------*/
+.contact-section { 
+    padding: 50px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}
+.contact-box{
+    background: #fff;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+h1{
+    margin-bottom: 10px;
+}
+.contact-section p{
+    margin-bottom: 40px;
+}
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #000000;
+}
+button { /* ftiaxnw to button gia to contact*/
+    background: #454545;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+}
+button:hover{ /* xrwma tou button otan kanwis hover */
+    background: #919191;
+    transition: 0.5s;
+}
+.contact-left h3 {
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/*--------testimonial------*/
+.testimonial{
+    padding-top: 100px;
+
+}
+.testimonial col-3{ /* ftiacnw to column 3 gia tis aksiologiseis */
+    text-align:center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3 img{ /* ftiaxnw tin ikona tou aksiologiti*/
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial col-3:hover{
+    transform: translateY(-10px);
+}
+.col-3 p{
+    font-size: 12px;
+    margin:12px 0;
+    color: #777;
+}
+
+/*-----Collapsible---------*/
+.collapsible { /* ftiaxnw to "read more" twn proiontwn*/
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
+  .menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+  }
+/*---media query for menu---*/
+  @media only screen and (max-width: 800px){ /* media query gia to menu gia othones me max 800px*/
+
+    nav ul{
+        position:absolute;
+        top: 110px;
+        left: 0;
+        background : #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    nav ul li a{
+        color: #fff;
+
+    }
+
+    .menu-icon{
+        display:block;
+        cursor: pointer;
+    }
+  }
+
+  /*---media query for less than 600 screen size---*/
+  @media only screen and (max-width: 600px){ /*media query gia ta items tou site se othones me max 600 pixels */
+    .row{
+        text-align:center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+  }
