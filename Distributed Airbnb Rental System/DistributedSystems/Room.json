@@ -1,0 +1,11 @@
+{
+"managerID" : 7,
+"roomName" : "Konaki Villa",
+"guests":3,
+"price":60.31,
+"stars":0,
+"area": "Crete",
+"reviews": 0,
+"roomImage":"/home/secon/Downloads/suite.jpg",
+"available":true 
+}
