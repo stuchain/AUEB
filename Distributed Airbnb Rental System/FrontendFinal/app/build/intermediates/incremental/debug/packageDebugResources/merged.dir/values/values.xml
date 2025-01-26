@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backroundblue1">#3000CBFF</color>
+    <color name="backroundblue2">#74FBEA</color>
+    <color name="backroundblue3">#00CBFF</color>
+    <color name="black">#FF000000</color>
+    <color name="electricblue">#04309F</color>
+    <color name="empty">#00FF0000</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">AppFrontend</string>
+    <style name="Base.Theme.AppFrontend" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.AppFrontend" parent="Base.Theme.AppFrontend"/>
+</resources>

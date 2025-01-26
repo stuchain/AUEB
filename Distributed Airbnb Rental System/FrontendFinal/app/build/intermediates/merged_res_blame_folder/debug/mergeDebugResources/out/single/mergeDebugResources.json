@@ -1,0 +1,202 @@
+[
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_double_room.jpg.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/double_room.jpg"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_economy_room.jpg.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/economy_room.jpg"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.frontend.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.frontend.app-main-33:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_baseline_person_outline_24.xml.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/baseline_person_outline_24.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_logomain1.png.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/logomain1.png"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/layout_book_rate.xml.flat",
+        "source": "com.example.frontend.app-main-33:/layout/book_rate.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_baseline_add_24.xml.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/baseline_add_24.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_backimagesearch.png.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/backimagesearch.png"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/layout_list_item.xml.flat",
+        "source": "com.example.frontend.app-main-33:/layout/list_item.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_baseline_airline_seat_individual_suite_24.xml.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/baseline_airline_seat_individual_suite_24.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_bookrateback.png.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/bookrateback.png"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable__489437048_house_81907.png.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/_489437048_house_81907.png"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_standard_room.jpg.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/standard_room.jpg"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_executive_suite.jpg.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/executive_suite.jpg"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_dollar_circle_svgrepo_com.xml.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/dollar_circle_svgrepo_com.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_outlined.xml.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/outlined.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/xml_backup_rules.xml.flat",
+        "source": "com.example.frontend.app-main-33:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.frontend.app-main-33:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_untitled_5.png.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/untitled_5.png"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_suite.jpg.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/suite.jpg"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/layout_activity_results.xml.flat",
+        "source": "com.example.frontend.app-main-33:/layout/activity_results.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_backimage.png.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/backimage.png"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_luxury_suite_1.jpg.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/luxury_suite_1.jpg"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_logo_up.png.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/logo_up.png"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.frontend.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_deluxe_suite.jpg.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/deluxe_suite.jpg"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_roundecorners.xml.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/roundecorners.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_backimage2.png.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/backimage2.png"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.frontend.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.frontend.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.frontend.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/layout_activity_login.xml.flat",
+        "source": "com.example.frontend.app-main-33:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_star_svgrepo_com.xml.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/star_svgrepo_com.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.frontend.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_logo_down.png.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/logo_down.png"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_penthouse.jpg.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/penthouse.jpg"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_calendar_icon.xml.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/calendar_icon.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_family_room.jpg.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/family_room.jpg"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.frontend.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.frontend.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_stroke.xml.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/stroke.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.example.frontend.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.frontend.app-main-33:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_single_room.jpg.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/single_room.jpg"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/drawable_baseline_apartment_24.xml.flat",
+        "source": "com.example.frontend.app-main-33:/drawable/baseline_apartment_24.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.frontend.app-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.frontend.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.frontend.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    }
+]

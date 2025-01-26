@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bookrateback"
+    android:gravity="center"
+    tools:context=".BookRateActivity">
+
+    <ImageView
+        android:id="@+id/topImageView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-200dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/logo_up"
+        android:scaleType="centerCrop"
+        />
+
+
+    <ImageView
+        android:id="@+id/roomImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/topImageView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/outlined"
+        android:padding="0dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomImage"
+        android:padding="50dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/outlined"
+
+        />
+
+    <EditText
+        android:id="@+id/startDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/information"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundecorners"
+        android:hint="Start Date (yyyy-mm-dd )"
+        android:textColorHint="@color/backroundblue3"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/endDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startDate"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundecorners"
+        android:textColorHint="@color/backroundblue3"
+        android:hint="End Date (yyyy-mm-dd )"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/bookButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endDate"
+        android:text="Book"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/backroundblue3"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookButton"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/inputRate"
+            android:layout_width="3dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="Give rate (ex. 4.0)"
+            android:textColorHint="@color/backroundblue3"
+            android:textAlignment="center"
+            android:background="@drawable/roundecorners"
+            />
+
+        <Button
+            android:id="@+id/rateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/backroundblue3"
+            android:layout_marginStart="16dp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
