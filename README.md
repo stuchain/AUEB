@@ -15,7 +15,7 @@ A second **e-commerce website**, also developed with **HTML and CSS**, but focus
 **Technologies:** HTML, CSS  
 
 ### 🎴 Python Card Game  
-An interactive **card game** developed in **Python**. The game is designed for **entertainment and functionality**, featuring game mechanics implemented using **OOP principles**.  
+An interactive **card game** developed in **Python**. The game is designed for **entertainment and functionality**, with low level coding as this was a project on my first semester.
 
 **Technologies:** Python  
 
