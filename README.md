@@ -1,19 +1,30 @@
-# AUEB
-AUEB Projects by Stelios Vasileiou
-This repository includes various projects developed as part of my coursework at Athens University of Economics and Business (AUEB). The projects showcase a range of technologies, from web development and Python to distributed systems.
+# 🎓 AUEB Projects by Stelios Vasileiou  
 
-Projects:
-Complex Characters:
-A shop website built with HTML and CSS. It features a clean, user-friendly interface, offering an intuitive browsing experience for users to explore various character-themed products.
+This repository contains various projects developed as part of my coursework at **Athens University of Economics and Business (AUEB)**. These projects cover a range of technologies, including **web development, Python programming, distributed systems, and scalable architectures**.  
 
-Untitled Luxury:
-Another shop website built with HTML and CSS, focusing on a luxury product line. The design emphasizes elegance and simplicity, providing a seamless shopping experience.
+## 🚀 Projects Overview  
 
-Python Card Game:
-A card game implemented in Python. The game is designed to be interactive and entertaining, with a focus on functionality and user experience.
+### 🛍️ Complex Characters  
+A **shop website** built with **HTML and CSS**, offering a clean, user-friendly interface. Users can explore a collection of **character-themed products** in a visually appealing design.  
 
-Peer-to-Peer File Exchange:
-A distributed file exchange system that allows users to share files directly between peers in a decentralized network. It uses multithreading and socket communication for efficient data transfer.
+**Technologies:** HTML, CSS  
 
-Distributed Airbnb Booking System:
-A scalable and efficient Airbnb booking system built in Java, featuring both backend and frontend components. The system uses the MapReduce framework for data processing and supports both manager (host) and customer functionalities for booking properties.
+### ✨ Untitled Luxury  
+A second **e-commerce website**, also developed with **HTML and CSS**, but focused on a **luxury product line**. The design prioritizes **elegance and simplicity**, ensuring a seamless shopping experience.  
+
+**Technologies:** HTML, CSS  
+
+### 🎴 Python Card Game  
+An interactive **card game** developed in **Python**. The game is designed for **entertainment and functionality**, featuring game mechanics implemented using **OOP principles**.  
+
+**Technologies:** Python  
+
+### 🔄 Peer-to-Peer File Exchange  
+A **distributed file-sharing system** enabling users to exchange files **directly between peers** in a decentralized network. It leverages **multithreading and socket programming** for efficient data transfer.  
+
+**Technologies:** Python, Sockets, Multithreading  
+
+### 🏨 Distributed Airbnb Booking System  
+A **scalable and efficient Airbnb-like booking system** built in **Java**, featuring both backend and frontend components. The system uses **MapReduce** for data processing and supports **hosts and customers** for managing bookings.  
+
+**Technologies:** Java, MapReduce, Distributed Systems  
