@@ -28,3 +28,9 @@ A **distributed file-sharing system** enabling users to exchange files **directl
 A **scalable and efficient Airbnb-like booking system** built in **Java**, featuring both backend and frontend components. The system uses **MapReduce** for data processing and supports **hosts and customers** for managing bookings.  
 
 **Technologies:** Java, MapReduce, Distributed Systems  
+
+## 📘 Bachelor Thesis — *Analysis of the Ethereum Ecosystem & Applications of Tokenization*
+**Author:** Stelios Vasileiou · **AUEB, Dept. of Informatics** · **Date:** March 2025
+
+**What it’s about:**  
+A focused study on **Ethereum** as a programmable blockchain and the way **tokenization** maps real-world and digital assets on-chain. It explains Ethereum’s architecture (EVM, accounts, gas), the transition to **Proof-of-Stake**, and **Layer-2** scalability. It then classifies token types/standards (ERC-20, ERC-721/1155; fungible, non-fungible, governance, utility, security, stablecoins) and examines benefits/risks. A core contribution is the analysis of **oracles** for secure, reliable off-chain data, including **data streams**, **on-chain verification**, **billing/cost models**, and **automation**. The thesis closes with future directions combining oracles with **IoT** and **AI/ML**.

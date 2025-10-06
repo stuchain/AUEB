@@ -16,23 +16,23 @@ public class LoginActivity extends AppCompatActivity {
     Button myBtn;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) { // Where the activity is created
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login); // Sets the layout for the activity to the XML file activity_login.xml
 
         TextView username = (TextView) findViewById(R.id.username);
-        TextView password = (TextView) findViewById(R.id.password);
+        TextView password = (TextView) findViewById(R.id.password); // Retrieves the username and password input fields from the layout by their IDs.
 
         mylabel = (TextView) findViewById(R.id.mylabel);
-        myBtn = (Button) findViewById(R.id.loginbtn);
+        myBtn = (Button) findViewById(R.id.loginbtn); // Label and login button from the layout
 
         myBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { // when login button is clicked, the code inside the onClick method is executed.
                 if (username.getText().toString().equals("admin") && password.getText().toString().equals("1234")) {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     intent.putExtra("name",username.toString());
-                    startActivity(intent);
+                    startActivity(intent); //Calls startActivity(intent) to switch to MainActivity.
                     username.setText("");
                     password.setText("");
                 } else {

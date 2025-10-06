@@ -34,7 +34,7 @@ public class BookRateActivity extends AppCompatActivity
     EditText rateIn;
     Button rate;
     // Deserializes json to a room object
-    private Room deserializeRoom(String json)
+    private Room deserializeRoom(String json) // A helper method to convert a JSON string into a Room object.
     {
         Gson gson = new GsonBuilder()
                 .registerTypeAdapter(LocalDate.class, new LocalDateDeserializer())
@@ -42,7 +42,7 @@ public class BookRateActivity extends AppCompatActivity
         return gson.fromJson(json, Room.class);
     }
     // Handler for book request
-    private Handler bookHandler = new Handler(Looper.getMainLooper(), new Handler.Callback() {
+    private Handler bookHandler = new Handler(Looper.getMainLooper(), new Handler.Callback() { //Creates a Handler to process the response for a booking request. When a message is received with key "Booking", it displays the response in a Toast.
         @Override
         public boolean handleMessage(@NonNull Message msg) {
             String response = msg.getData().getString("Booking");
@@ -60,7 +60,7 @@ public class BookRateActivity extends AppCompatActivity
         }
     });
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) { //sets the layout to book_rate.xml.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.book_rate);
         roomImage = findViewById(R.id.roomImage);
@@ -69,7 +69,7 @@ public class BookRateActivity extends AppCompatActivity
         endDateIn = findViewById(R.id.endDate);
         book = findViewById(R.id.bookButton);
         rateIn = findViewById(R.id.inputRate);
-        rate = findViewById(R.id.rateButton);
+        rate = findViewById(R.id.rateButton); //Retrieves all UI elements (ImageView, TextViews, EditTexts, and Buttons) by their IDs.
 
         Intent intent = getIntent();                            // get intent from Results Activity
         String json = intent.getStringExtra("RoomInfo");    // get room's json
@@ -80,7 +80,8 @@ public class BookRateActivity extends AppCompatActivity
         roomInformation.setText(room.toString());               // set text of room info
 
         // Button book setup
-        book.setOnClickListener(new View.OnClickListener() {
+        book.setOnClickListener(new View.OnClickListener() { //When clicked, reads the start and end dates from the EditTexts, creates a new Dummy thread with action "book" (passing room name and dates), and starts the thread
+
             @Override
             public void onClick(View v) {
                 String startDate = startDateIn.getText().toString();    // get start date from user input
@@ -90,7 +91,7 @@ public class BookRateActivity extends AppCompatActivity
             }
         });
         // Button rate setup
-        rate.setOnClickListener(new View.OnClickListener() {
+        rate.setOnClickListener(new View.OnClickListener() { //When clicked, reads the rating value from the EditText, parses it as a double, creates a Dummy thread with action "rate" (passing the rating and room name), and starts the thread.
             @Override
             public void onClick(View v) {
                 double stars = Double.parseDouble(rateIn.getText().toString());     // get rating (stars)

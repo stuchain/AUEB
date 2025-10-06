@@ -43,7 +43,7 @@ public class RoomsAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup container) {
+    public View getView(int position, View convertView, ViewGroup container) { //called for each item in the ListView to render its view.
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.list_item, container, false);
         }

@@ -21,12 +21,12 @@ import java.util.ArrayList;
 
 public class ResultsActivity extends AppCompatActivity
 {
-    ListView listView;      // list view instance
+    ListView listView;      // list view instance to display the list of rooms.
     // Deserializes results object from json
     private Results deserializeResults(String json)
     {
-        Gson gson = new GsonBuilder()
-                .registerTypeAdapter(LocalDate.class, new LocalDateDeserializer())
+        Gson gson = new GsonBuilder() //Defines a helper method that converts a JSON string into a Results object using Gson.
+                .registerTypeAdapter(LocalDate.class, new LocalDateDeserializer()) //ensures that any date strings in the JSON are parsed properly.
                 .create();
         return gson.fromJson(json, Results.class);
     }
@@ -34,19 +34,19 @@ public class ResultsActivity extends AppCompatActivity
     private String serializeRoom(Room room)
     {
         Gson gson = new GsonBuilder()
-                .registerTypeAdapter(LocalDate.class, new LocalDateSerializer())
+                .registerTypeAdapter(LocalDate.class, new LocalDateSerializer()) // The LocalDateSerializer ensures dates are formatted as "yyyy-MM-dd".
                 .create();
         return gson.toJson(room);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_results);
+        setContentView(R.layout.activity_results); //Sets the layout to activity_results.xml
         Log.d("DEBUG", "I am in!");
         Intent intent = getIntent();                                // get intent object from main activity
         Log.d("DEBUG", intent.getExtras().toString());
         String json = intent.getExtras().getString("Results");  // get json from intent object
-        Results results = deserializeResults(json);                 // get results from json
+        Results results = deserializeResults(json);                 // Calls the helper method to convert the JSON into a Results object
 
         listView = (ListView)findViewById(R.id.listview);           // find list view in xml
         ArrayList<Room> roomsResult = new ArrayList<>();            // create an array for rooms
@@ -56,7 +56,7 @@ public class ResultsActivity extends AppCompatActivity
                 Log.d("DEBUG", room.getRoomName());
             }
         }
-        RoomsAdapter adapter = new RoomsAdapter(getLayoutInflater(), roomsResult);    // create and set adapter
+        RoomsAdapter adapter = new RoomsAdapter(getLayoutInflater(), roomsResult);    // Creates an instance of the custom RoomsAdapter, passing in the layout inflater and the list of Room objects.
         listView.setAdapter(adapter);                               // set adapter of listview
 
         // Change to BookRateActivity when click on an element of listView
