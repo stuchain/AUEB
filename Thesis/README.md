@@ -5,33 +5,33 @@
 **Date:** March 2025
 
 ## What this thesis is about
-This thesis examines **Ethereum** as a programmable blockchain and explains how **tokenization** can represent real-world and digital assets on-chain.
+This work studies **Ethereum** as programmable infrastructure and evaluates how **tokenization** represents real-world and digital assets on-chain.
 
-Core topics include:
-- Ethereum fundamentals: EVM, accounts, gas, and smart contract execution.
-- Consensus and scalability: Proof-of-Stake and Layer-2 approaches.
-- Tokenization framework: token categories, standards, and practical use cases.
-- Oracle infrastructure: secure off-chain data delivery, verification, and automation.
+Scope:
+- Ethereum execution model (EVM, accounts, gas, smart contracts).
+- Consensus and scalability evolution (Proof-of-Stake, Layer-2 approaches).
+- Token standards and categories (ERC-20, ERC-721, ERC-1155 and related use cases).
+- Oracle design for secure off-chain data ingestion and verification.
 
-Reference materials:
-- [Ethereum Docs](https://ethereum.org/en/developers/docs/)
-- [ERC-20 Standard](https://eips.ethereum.org/EIPS/eip-20)
-- [ERC-721 Standard](https://eips.ethereum.org/EIPS/eip-721)
-- [ERC-1155 Standard](https://eips.ethereum.org/EIPS/eip-1155)
+Core references:
+- [Ethereum Developer Documentation](https://ethereum.org/en/developers/docs/)
+- [ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- [ERC-721](https://eips.ethereum.org/EIPS/eip-721)
+- [ERC-1155](https://eips.ethereum.org/EIPS/eip-1155)
 
 ## Key contributions
-- Engineer-focused explanation of EVM execution and smart contract lifecycle.
-- Practical comparison of scalability approaches after Ethereum's transition to PoS.
-- Structured classification of token standards and token categories.
-- Analysis of oracle design patterns for reliable off-chain data integration.
-- Forward-looking perspective on tokenization with IoT and AI/ML systems.
+- Clear technical walkthrough of EVM execution and smart-contract lifecycle.
+- Comparative view of Ethereum scalability paths after PoS adoption.
+- Structured taxonomy of token standards and practical tokenization models.
+- Practical framing of oracle patterns for reliability, verification, and automation.
+- Forward-looking discussion on oracle integration with IoT and AI/ML ecosystems.
 
 ## Structure
-1. **Introduction** - motivation, research scope, and objectives.  
-2. **Ethereum** - architecture, consensus model, ecosystem, and scalability roadmap.  
-3. **Tokenization** - concepts, standards, value proposition, and risk analysis.  
-4. **Oracles for Secure & Reliable Data** - oracle models, verification mechanisms, and implementation patterns.  
-5. **Conclusions & Future Work** - key findings and future research opportunities.
+1. **Introduction** - motivation, objectives, and research boundaries.  
+2. **Ethereum** - architecture, consensus transition, ecosystem context, and scaling roadmap.  
+3. **Tokenization** - concepts, standards, applications, and risk/benefit analysis.  
+4. **Oracles for Secure & Reliable Data** - architectures, verification methods, and usage patterns.  
+5. **Conclusions & Future Work** - synthesis of findings and future research directions.
 
 ## Keywords
 `Ethereum` · `EVM` · `Smart Contracts` · `Proof-of-Stake` · `Layer-2` · `Tokenization` · `ERC-20` · `ERC-721` · `ERC-1155` · `Oracles` · `DeFi` · `NFTs`

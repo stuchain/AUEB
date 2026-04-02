@@ -19,6 +19,15 @@ Core source files:
 - [`src/PeerInfo.java`](src/PeerInfo.java)
 - [`src/PhotoConfirmationDialog.java`](src/PhotoConfirmationDialog.java)
 
+## Protocol Responsibilities
+
+- `Register`/`Login`: create peer identity and active session.
+- `Inform`: publish available files to tracker metadata.
+- `List`/`Details`: discover peers and shared file information.
+- `checkActive`: validate candidate peers before download.
+- `notify`: update transfer status and counters.
+- `Logout`/`Exit`: close active session cleanly.
+
 ## Build and Run
 
 Prerequisite: [JDK](https://www.oracle.com/java/technologies/downloads/)
@@ -41,7 +50,7 @@ Typical session:
 3. Register and login users.
 4. Inform tracker about available files.
 5. Use list/details/check operations to discover files and active peers.
-6. Trigger download workflow and notify status updates.
+6. Trigger download workflow and send status notifications.
 7. Logout and exit peers.
 
 ## Project Structure
@@ -49,6 +58,12 @@ Typical session:
 - `src/` - Java source files.
 - `fileDownloadList.txt` - local download tracking list used by workflow.
 - Runtime shared files may be generated under `Shared_directory/`.
+
+## Troubleshooting
+
+- If peers cannot connect, verify tracker is already running.
+- If runtime files are missing, launch from the `CN` directory so relative paths resolve correctly.
+- If port conflicts occur, stop old processes or adjust fixed ports in code.
 
 ## Known Limitations
 

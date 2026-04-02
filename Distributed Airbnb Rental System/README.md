@@ -5,16 +5,15 @@ The backend follows a Master/Worker/Reducer model to coordinate room search and 
 
 ## System Architecture
 
-- **Backend (`DistributedSystems/backend`)**  
-  Components include `Master`, `Worker`, and `Reducer` services connected through sockets.
-- **Frontend (`FrontendFinal`)**  
-  Android application for customer login, search, booking, and review flows.
-- **Data processing model**  
-  MapReduce-inspired distribution for search and aggregation tasks.
+- **Master**: receives client requests and coordinates worker execution.
+- **Worker nodes**: process room, search, booking, and review operations.
+- **Reducer**: aggregates distributed results.
+- **Android frontend**: client interface for user actions and result display.
 
 Key paths:
 - Backend: [`DistributedSystems/backend/src/main/java/ds`](DistributedSystems/backend/src/main/java/ds)
 - Frontend: [`FrontendFinal/app/src/main/java/com/example/frontend`](FrontendFinal/app/src/main/java/com/example/frontend)
+- Worker config: [`DistributedSystems/workers.json`](DistributedSystems/workers.json)
 
 ## User Roles
 
@@ -37,14 +36,35 @@ Key paths:
 
 ## Setup and Run
 
-1. Build backend:
+1. Prepare backend:
    - Navigate to `DistributedSystems/backend`
    - Run `mvn clean compile`
-2. Start backend services in order:
-   - `Reducer`
-   - `Worker` instances (ports should match `DistributedSystems/workers.json`)
-   - `Master`
-3. Open `FrontendFinal` in Android Studio and run the app on an emulator/device.
+2. Start distributed services in order:
+   - Start `Reducer` first.
+   - Start `Worker` instances (matching `DistributedSystems/workers.json` ports).
+   - Start `Master` last.
+3. Start clients:
+   - Android app from `FrontendFinal` (Android Studio), or
+   - Optional console/testing clients from backend package entry points.
+
+## Workflow
+
+1. User authenticates in the client.
+2. Client sends search/booking actions to the Master service.
+3. Master dispatches work to workers and uses reducer for aggregation when needed.
+4. Aggregated results are returned to client for booking/rating actions.
+
+## Configuration Notes
+
+- Ensure worker host/port values align with your environment.
+- Validate hardcoded IP/path values in backend/frontend classes before first run.
+- Keep backend startup order unchanged to avoid failed socket communication.
+
+## Troubleshooting
+
+- **Connection refused:** verify `Reducer` and all workers are running before `Master`.
+- **No results returned:** check `workers.json` and host/port consistency.
+- **Frontend cannot reach backend:** update configured host IP and test on same network.
 
 ## Notes
 
