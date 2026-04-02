@@ -1,25 +1,33 @@
-# 🔗 Peer-to-Peer (P2P) File Sharing System  
+# Peer-to-Peer (P2P) File Sharing System
 
-This is a **peer-to-peer (P2P) file-sharing system** that allows users to **share files directly** with each other in a decentralized network. The system consists of two main components:  
+This project implements a Java-based file-sharing network with peer coordination through a central tracker.
 
-- **Peer**: A node representing a user that can register, connect, share files, download files, and disconnect.  
-- **Tracker**: A central mediator that maintains a list of registered users, manages connections, and provides information about available files.  
+The system includes:
+- **Tracker**: maintains user sessions and file availability metadata.
+- **Peer nodes**: register, authenticate, publish available files, and request downloads.
 
-## ⚙️ System Architecture  
+## System Architecture
 
-- **Tracker**: Acts as a central meeting point, managing user registrations and file availability.  
-- **Peers**: Communicate with the Tracker and other peers to exchange files.  
-- **Sockets & Multithreading**: Enables real-time communication and efficient handling of multiple connections.  
+- Tracker-centric peer discovery and coordination.
+- Socket-based communication between tracker and peers.
+- Multithreaded request handling for concurrent peer operations.
 
-## 🚀 How It Works  
+Implementation resources:
+- Detailed implementation guide: [`CN/README.md`](CN/README.md)
+- Core classes: [`CN/src/Tracker.java`](CN/src/Tracker.java), [`CN/src/Peer.java`](CN/src/Peer.java), [`CN/src/PeerInfo.java`](CN/src/PeerInfo.java)
 
-1. **Run the Tracker** to manage peer connections.  
-2. **Start a Peer** to connect to the network and register.  
-3. **Share & Download Files** by requesting data from other peers.  
-4. **Disconnect** when done, ensuring smooth network operation.  
+## How It Works
 
-## 🖥️ Technologies Used  
+1. Start the tracker service.
+2. Start one or more peer clients.
+3. Register/login peers and publish available files.
+4. Query file owners and perform download workflow.
+5. Logout or disconnect from the network.
 
-- **Java**  
-- **Socket Programming** (for communication)  
-- **Multithreading** (for handling multiple connections)  
+For exact commands and runtime notes, see [`CN/README.md`](CN/README.md).
+
+## Technologies Used
+
+- [Java](https://www.oracle.com/java/technologies/downloads/)
+- [Java Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/)
+- [Java Concurrency / Threads](https://docs.oracle.com/javase/tutorial/essential/concurrency/)

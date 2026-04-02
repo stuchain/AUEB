@@ -1,39 +1,47 @@
-# 🎓 AUEB Projects by Stelios Vasileiou  
+# AUEB Projects
 
-This repository contains various projects developed as part of my coursework at **Athens University of Economics and Business (AUEB)**. These projects cover a range of technologies, including **web development, Python programming, distributed systems, and scalable architectures**.  
+Portfolio of coursework and academic projects completed at the **Athens University of Economics and Business (AUEB)**, Department of Informatics.
 
-## 📘 Bachelor Thesis - *Analysis of the Ethereum Ecosystem & Applications of Tokenization*
-**Author:** Stelios Vasileiou · **AUEB, Dept. of Informatics** · **Date:** March 2025
+The repository includes projects in distributed systems, Java and Android development, Python programming, web development, and blockchain research.
 
-**What it’s about:**  
-A focused study on **Ethereum** as a programmable blockchain and the way **tokenization** maps real-world and digital assets on-chain. It explains Ethereum’s architecture (EVM, accounts, gas), the transition to **Proof-of-Stake**, and **Layer-2** scalability. It then classifies token types/standards (ERC-20, ERC-721/1155; fungible, non-fungible, governance, utility, security, stablecoins) and examines benefits/risks. A core contribution is the analysis of **oracles** for secure, reliable off-chain data, including **data streams**, **on-chain verification**, **billing/cost models**, and **automation**. The thesis closes with future directions combining oracles with **IoT** and **AI/ML**.
+## Bachelor Thesis - *Analysis of the Ethereum Ecosystem & Applications of Tokenization*
+**Author:** Stelios Vasileiou  
+**Institution:** AUEB, Department of Informatics  
+**Date:** March 2025
 
-## 🚀 Projects Overview  
+**Overview:**  
+The thesis studies Ethereum as a programmable blockchain platform and examines how tokenization maps real-world and digital assets on-chain. It covers EVM fundamentals, Proof-of-Stake, Layer-2 scaling, token standards (ERC-20, ERC-721, ERC-1155), and oracle-driven off-chain data integrity.
 
-### 🔄 Peer-to-Peer File Exchange  
-A **distributed file-sharing system** enabling users to exchange files **directly between peers** in a decentralized network. It leverages **multithreading and socket programming** for efficient data transfer.  
+**Project link:** [`Thesis/README.md`](Thesis/README.md)
 
-**Technologies:** Python, Sockets, Multithreading  
+## Projects Overview
 
-### 🏨 Distributed Airbnb Booking System  
-A **scalable and efficient Airbnb-like booking system** built in **Java**, featuring both backend and frontend components. The system uses **MapReduce** for data processing and supports **hosts and customers** for managing bookings.  
+### Peer-to-Peer File Exchange
+A Java-based peer-to-peer file-sharing system with a central tracker for peer discovery and coordination. The project focuses on networking fundamentals, socket communication, and concurrent request handling.
 
-**Technologies:** Java, MapReduce, Distributed Systems  
+**Technologies:** Java, Sockets, Multithreading  
+**Project links:** [`Peer-to-Peer (P2P) File Sharing System/CNN/README.md`](Peer-to-Peer%20(P2P)%20File%20Sharing%20System/CNN/README.md), [`Peer-to-Peer (P2P) File Sharing System/CNN/CN/README.md`](Peer-to-Peer%20(P2P)%20File%20Sharing%20System/CNN/CN/README.md)
 
-### 🛍️ Complex Characters  
-A **shop website** built with **HTML and CSS**, offering a clean, user-friendly interface. Users can explore a collection of **character-themed products** in a visually appealing design.  
+### Distributed Airbnb Booking System
+A distributed booking platform with a Java backend (Master/Worker/Reducer model) and an Android client. It supports listing management, search, booking, and ratings workflows.
+
+**Technologies:** Java, Android, Distributed Systems, MapReduce concepts  
+**Project link:** [`Distributed Airbnb Rental System/README.md`](Distributed%20Airbnb%20Rental%20System/README.md)
+
+### Complex Characters
+A static e-commerce storefront prototype focused on product browsing and clean page structure for character-themed merchandise.
 
 **Technologies:** HTML, CSS  
+**Project link:** [`HTML CSS Shop - COMPLEX CARACTERS/README.md`](HTML%20CSS%20Shop%20-%20COMPLEX%20CARACTERS/README.md)
 
-### ✨ Untitled Luxury  
-A second **e-commerce website**, also developed with **HTML and CSS**, but focused on a **luxury product line**. The design prioritizes **elegance and simplicity**, ensuring a seamless shopping experience.  
+### Untitled Luxury
+A static luxury-themed storefront prototype emphasizing visual hierarchy, simplified navigation, and presentation-driven layout.
 
 **Technologies:** HTML, CSS  
+**Project link:** [`HTML CSS Shop - Untitled Luxury/README.md`](HTML%20CSS%20Shop%20-%20Untitled%20Luxury/README.md)
 
-### 🎴 Python Card Game  
-An interactive **card game** developed in **Python**. The game is designed for **entertainment and functionality**, with low level coding as this was a project on my first semester.
+### Python Card Game
+A command-line card game project built in Python with multiple difficulty modes and gameplay variants.
 
 **Technologies:** Python  
-
-
-
+**Project link:** [`Python - Card Game/README.md`](Python%20-%20Card%20Game/README.md)

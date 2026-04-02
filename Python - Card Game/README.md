@@ -1,23 +1,36 @@
-# 🃏 Python Guessing Card Game  
+# Python Guessing Card Game
 
-This is a **low-level coding guessing card game** developed in **Python**. The game offers different **difficulty levels** (**Easy, Medium, Hard**) and multiple **playstyles**, providing a fun and challenging experience for players.  
+A command-line card game written in Python with multiple difficulty levels and gameplay variants. This project was developed early in the degree program and focuses on core programming logic and game flow.
 
-## 🎮 Game Features  
+## Game Features
 
-- **Multiple Difficulty Levels**: Choose between **Easy, Medium, and Hard** for different levels of challenge.  
-- **Different Playstyles**: Enjoy various ways to play the game, adding replay value.  
-- **Lightweight & Fast**: Designed for efficiency and smooth performance.  
+- Three difficulty levels: **Easy**, **Medium**, and **Hard**.
+- Two gameplay modes: classic and figures-based variants.
+- Local multiplayer turn flow with score tracking and winner resolution.
+- Lightweight implementation using standard Python modules.
 
-## 🚀 How to Play  
+## How to Play
 
-1. **Run the game** by executing the following file:  
-   - Navigate to the `dist` folder.  
-   - Open **`card_game.exe`** to start playing.  
+1. Run from source:
+   - Open a terminal in this folder.
+   - Execute: `python card_game.py`
+2. Follow the prompts to choose:
+   - Number of players
+   - Difficulty level
+   - Gameplay mode
+3. Play rounds and match cards according to the selected mode.
 
-2. **Select your difficulty level** and **playstyle**.  
+Optional executable flow:
+- If a packaged build exists, run `dist/card_game.exe`.
+- To build the executable, use [PyInstaller](https://pyinstaller.org/en/stable/) with `card_game.spec`.
 
-3. **Guess the correct cards** based on the game’s rules and try to win!  
+## Requirements
 
-## 🖥️ Requirements  
+- [Python 3](https://www.python.org/downloads/) for source execution.
+- Optional for packaging: [PyInstaller](https://pyinstaller.org/en/stable/).
 
-No installation is required! Simply run **`card_game.exe`** from the `dist` folder.  
+Project files:
+- Entry point: [`card_game.py`](card_game.py)
+- Difficulty modules: [`easy.py`](easy.py), [`medium.py`](medium.py), [`hard.py`](hard.py)
+- Variant modules: [`easy1.py`](easy1.py), [`medium1.py`](medium1.py), [`hard1.py`](hard1.py)
+- Helpers: [`score.py`](score.py), [`max.py`](max.py)

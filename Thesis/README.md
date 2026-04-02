@@ -5,26 +5,36 @@
 **Date:** March 2025
 
 ## What this thesis is about
-This thesis analyzes **Ethereum** as a programmable blockchain and explains how **tokenization** brings real-world and digital assets on-chain. It covers Ethereum’s architecture (EVM, accounts, gas), the move to **Proof-of-Stake**, and **Layer-2** scalability. It then surveys token standards and types (ERC-20, ERC-721/1155; fungible, non-fungible, governance, utility, security, stablecoins) and evaluates benefits/risks of tokenized assets. A central focus is the role of **oracles** in delivering secure, reliable off-chain data to smart contracts-examining **data streams**, **on-chain verification**, **billing/cost models**, and **automation**. The work closes with future directions that combine oracles with **IoT** and **AI/ML**.
+This thesis examines **Ethereum** as a programmable blockchain and explains how **tokenization** can represent real-world and digital assets on-chain.
+
+Core topics include:
+- Ethereum fundamentals: EVM, accounts, gas, and smart contract execution.
+- Consensus and scalability: Proof-of-Stake and Layer-2 approaches.
+- Tokenization framework: token categories, standards, and practical use cases.
+- Oracle infrastructure: secure off-chain data delivery, verification, and automation.
+
+Reference materials:
+- [Ethereum Docs](https://ethereum.org/en/developers/docs/)
+- [ERC-20 Standard](https://eips.ethereum.org/EIPS/eip-20)
+- [ERC-721 Standard](https://eips.ethereum.org/EIPS/eip-721)
+- [ERC-1155 Standard](https://eips.ethereum.org/EIPS/eip-1155)
 
 ## Key contributions
-- Clear, engineer-friendly walkthrough of **EVM** execution and smart-contract lifecycle.  
-- Concise explanation of Ethereum’s shift to **PoS** and comparison of **L2** approaches (optimistic vs. zk-rollups, channels, sidechains).  
-- Structured taxonomy of **token types** and their use cases in DeFi, NFTs, and asset tokenization.  
-- Practical analysis of **oracle** patterns: decentralized data sourcing, cryptographic verification, reporting, and **automation** ties.  
-- Forward-looking view on **tokenization + oracles** with **IoT/AI** for trustworthy real-world data.
+- Engineer-focused explanation of EVM execution and smart contract lifecycle.
+- Practical comparison of scalability approaches after Ethereum's transition to PoS.
+- Structured classification of token standards and token categories.
+- Analysis of oracle design patterns for reliable off-chain data integration.
+- Forward-looking perspective on tokenization with IoT and AI/ML systems.
 
 ## Structure
-1. **Introduction** - motivation, scope, research questions.  
-2. **Ethereum** - architecture, consensus, development tooling, ecosystem, scalability, future roadmap.  
-3. **Tokenization** - concepts, key elements, token types, pros/cons, smart-contract role.  
-4. **Oracles for Secure & Reliable Data** - oracle concept and role in tokenization; data streams; verification; use cases (asset tokenization, DeFi, supply chains); billing; **automation**.  
-5. **Conclusions & Future Work** - synthesis and research opportunities.
+1. **Introduction** - motivation, research scope, and objectives.  
+2. **Ethereum** - architecture, consensus model, ecosystem, and scalability roadmap.  
+3. **Tokenization** - concepts, standards, value proposition, and risk analysis.  
+4. **Oracles for Secure & Reliable Data** - oracle models, verification mechanisms, and implementation patterns.  
+5. **Conclusions & Future Work** - key findings and future research opportunities.
 
 ## Keywords
-`Ethereum` · `EVM` · `Smart Contracts` · `Proof-of-Stake` · `Layer-2` · `Rollups` ·  
-`Tokenization` · `ERC-20` · `ERC-721` · `ERC-1155` · `DeFi` · `NFTs` ·  
-`Oracles` · `Data Streams` · `On-chain Verification` · `Automation` · `IoT` · `AI/ML`
+`Ethereum` · `EVM` · `Smart Contracts` · `Proof-of-Stake` · `Layer-2` · `Tokenization` · `ERC-20` · `ERC-721` · `ERC-1155` · `Oracles` · `DeFi` · `NFTs`
 
 ## Citation
 Vasileiou, S. (2025). *Analysis of the Ethereum Ecosystem & Applications of Tokenization*. Athens University of Economics & Business (AUEB), Department of Informatics.

@@ -1,29 +1,53 @@
-# 🏨 Manager-Customer Distributed Booking System  
+# Manager-Customer Distributed Booking System
 
-This is a **distributed Airbnb-style booking system** developed in **Java**, integrating both **backend and frontend functionalities** for efficient and scalable short-term rental management. The system leverages the **MapReduce framework** for data processing, ensuring high performance and reliability.  
+A distributed Airbnb-style booking platform with a Java backend and Android frontend.  
+The backend follows a Master/Worker/Reducer model to coordinate room search and booking workflows.
 
-## ⚙️ System Architecture  
+## System Architecture
 
-- **Backend**: Manages users, property listings, reservations, and availability tracking.  
-- **Frontend (Android App)**: Provides an intuitive interface for customers to search and book properties.  
-- **MapReduce Integration**: Optimizes data analysis, enabling efficient booking trends and availability tracking.  
+- **Backend (`DistributedSystems/backend`)**  
+  Components include `Master`, `Worker`, and `Reducer` services connected through sockets.
+- **Frontend (`FrontendFinal`)**  
+  Android application for customer login, search, booking, and review flows.
+- **Data processing model**  
+  MapReduce-inspired distribution for search and aggregation tasks.
 
-## 👥 User Roles  
+Key paths:
+- Backend: [`DistributedSystems/backend/src/main/java/ds`](DistributedSystems/backend/src/main/java/ds)
+- Frontend: [`FrontendFinal/app/src/main/java/com/example/frontend`](FrontendFinal/app/src/main/java/com/example/frontend)
 
-### 🏠 Managers (Hosts)  
-- Add and manage property listings.  
-- Update availability and view reservations.  
+## User Roles
 
-### 🛏️ Customers  
-- Search properties using filters (location, date, price, rating, capacity).  
-- View detailed property information (photos, map locations, amenities).  
-- Book stays and manage reservations.  
-- Rate previous stays and update account details.  
-- Access functionalities through an **Android application**.  
+### Managers (Hosts)
+- Add and manage property listings.
+- Maintain availability and monitor reservations.
 
-## 🖥️ Technologies Used  
+### Customers
+- Search listings with filters (location, date, price, rating, capacity).
+- View listing details and submit booking requests.
+- Rate completed stays and manage account-related actions.
+- Access the system through the Android client.
 
-- **Java** (Backend & Console Application)  
-- **Android (Java)** (Frontend)  
-- **MapReduce** (Data Processing)  
-- **Distributed Systems Architecture**  
+## Technologies Used
+
+- [Java](https://www.oracle.com/java/technologies/downloads/) (backend and console tooling)
+- [Android Developers](https://developer.android.com/) (mobile frontend)
+- [Maven](https://maven.apache.org/) and [Gradle](https://gradle.org/) (build tooling)
+- Distributed systems and MapReduce concepts
+
+## Setup and Run
+
+1. Build backend:
+   - Navigate to `DistributedSystems/backend`
+   - Run `mvn clean compile`
+2. Start backend services in order:
+   - `Reducer`
+   - `Worker` instances (ports should match `DistributedSystems/workers.json`)
+   - `Master`
+3. Open `FrontendFinal` in Android Studio and run the app on an emulator/device.
+
+## Notes
+
+- Some IP addresses and file paths are currently hardcoded in backend/frontend classes.
+- Service startup order is important for successful communication.
+- This repository may include generated build output directories (`build/`, `target/`) from previous runs.
