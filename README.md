@@ -15,7 +15,7 @@ The repository includes projects in distributed systems, Java and Android develo
 **Stack:** Blockchain research, Ethereum ecosystem analysis, academic writing  
 **Focus:** EVM, PoS transition, Layer-2 scaling, ERC standards, oracle design  
 **Status:** Completed (March 2025)  
-**Open:** [`Thesis/README.md`](Thesis/README.md)
+**Open:** [`Thesis/README.md`](Thesis)
 
 ## Projects Overview
 
